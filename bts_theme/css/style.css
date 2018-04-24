@@ -1,0 +1,286 @@
+
+/* utility classes */
+.box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+.bg-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #d7d5e1;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:focus,
+a:active {
+    outline: 0 none;
+    text-decoration: none;
+}
+
+.to-left {
+    float: left;
+}
+.to-right {
+    float: right;
+}
+.to-none {
+    float: none;
+}
+.to-center {
+    float: none;
+    margin: 0 auto;
+}
+
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.v-center {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -mos-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.h-center {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -mos-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.center {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -mos-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -mos-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+.full {
+    float: left;
+    width: 100%;
+}
+.w-100 {
+    width: 100%;
+}
+.w-75 {
+    width: 75%;
+}
+.w-50 {
+    width: 50%;
+}
+.w-25 {
+    width: 25%;
+}
+.no-minwidth {
+    min-width: auto;
+}
+
+.d-flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-tabel {
+    display: table;
+}
+.d-cell {
+    display: table-cell;
+}
+.d-block {
+    display: block;
+}
+.d-inline {
+    display: inline-block;
+}
+
+.eql-row {
+    font-size: 0;
+    letter-spacing: -0.31em;
+}
+.eql-row .eql-col {
+    float: none !important;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: normal;
+    vertical-align: top;
+}
+
+.eql-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.eql-height > div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.m-10 {
+    margin: 10px;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mt-25 {
+    margin-top: 25px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.ml-30 {
+    margin-left: 30px;
+}
+.mr-5 {
+    margin-right: 5px;
+}
+.mr-15 {
+    margin-right: 15px;
+}
+.mr-25 {
+    margin-right: 25px;
+}
+.no-m {
+    margin: 0 !important;
+}
+
+
+.p-10 {
+    padding: 10px;
+}
+.p-5 {
+    padding: 10px;
+}
+.p-20 {
+    padding: 10px;
+}
+.pt-5 {
+    padding-top: 5px;
+}
+.pt-15 {
+    padding-top: 15px;
+}
+.pt-25 {
+    padding-top: 25px;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pl-10 {
+    padding-left: 10px;
+}
+.pl-20 {
+    padding-left: 20px;
+}
+.pl-30 {
+    padding-left: 30px;
+}
+.pr-5 {
+    padding-right: 5px;
+}
+.pr-15 {
+    padding-right: 15px;
+}
+.pr-25 {
+    padding-right: 25px;
+}
+.no-p {
+    padding: 0 !important;
+}
+
+.set-shadow {
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+.top-shadow {
+    box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.2);
+}
+
+::selection {
+    background: #0088ff;
+    color: #fff;
+}
+.transition {
+    -webkit-transition: 0.7s ease all;
+    -moz-transition: 0.7s ease all;
+    -ms-transition: 0.7s ease all;
+    transition: 0.7s ease all;
+}
